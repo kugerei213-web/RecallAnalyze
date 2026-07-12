@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Side Example</title>
+    <meta name="description" content="Scrollama: Sticky Side Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .scrolly {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            background-color: #000000;
+            padding: 1rem;
+        }
+
+        .scrolly>* {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .scrolly article {
+            position: relative;
+            padding: 0 1rem;
+            max-width: 20rem;
+        }
+
+
+
+        .step {
+            margin: 0 auto 2rem auto;
+            background-color: #cfed0900;
+            color: #ffffff00;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step.is-active {
+            background-color: rgba(10, 5, 46, 0.596);
+            color: #ffffff;
+        }
+
+
+        .step2 p {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .step2 {
+            margin: 0 auto 2rem auto;
+            background-color: #cfed0900;
+            color: #ffffff00;
+        }
+
+        .step2:last-child {
+            margin-bottom: 0;
+        }
+
+        .step2.is-active {
+            background-color: rgb(202, 255, 145);
+            color: #ff2592;
+        }
+
+
+        .step2 p {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        figure {
+            position: -webkit-sticky;
+            position: sticky;
+            width: 100%;
+            margin: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            background-color: #ffffffec;
+            z-index: 0;
+        }
+
+        figure p {
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: 900;
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="intro">
+            <h1 class="intro__hed">Software-Related Recalls <br> 100-Fold in 25 years</h1>
+            <p class="intro__dek">
+                by Rei Kuge
+            </p>
+        </section>
+
+        <section id="outro">
+            <div class="text">
+                <p>Automotive recalls caused by software issues are increasing in the United States.
+                    An analysis of statistics from the National Highway Traffic Safety Administration (NHTSA) shows that
+                    more than 4,000 model-year 2025 (MY2025) vehicle models were affected by software-related recalls.
+                    Automakers and suppliers are facing a growing need to develop more sophisticated and reliable
+                    software.
+                </p>
+            </div>
+        </section>
+        <section id="scrolly" class="scrolly">
+            <figure>
+                <div id="my_dataviz"></div>
+            </figure>
+
+
+            <article>
+                <div class="step" data-step="1">
+                    <h4>2025</h4>
+                    <p>NHTSA publishes data that include information such as the main cause of each recall and the
+                        components that need to be repaired or replaced.
+                        We classified the recalls into six categories: “software,” “safety equipment,” “powertrain,”
+                        “chassis,” “electronics,” and “other.”
+                        We found that 4,620 of the 9,600 MY2025 model entries were affected by software-related recalls.
+                    </p>
+                </div>
+                <div class="step" data-step="2">
+                    <h4>2000</h4>
+                    <p>An analysis conducted at five-year intervals shows that software was not a major source of
+                        problems in the 2000s.
+                        Safety equipment, such as airbags, caused more recalls than software did.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <h4>2005</h4>
+                    <p>
+                        The red portion of this graph indicates software issues, while the blue portion indicates
+                        hardware issues.
+                    </p>
+
+                </div>
+                <div class="step" data-step="4">
+                    <h4>2010</h4>
+                    <p>The radius of the circle represents the total number of recalled vehicle models.
+                        The larger the number of models, the larger the circle becomes.
+                    </p>
+
+                    <div class="step" data-step="5">
+                        <h4>2015</h4>
+
+                    </div>
+                    <div class="step" data-step="6">
+                        <h4>2020</h4>
+                        <p>However, software became a major cause of recalls among vehicles from MY2020 onward.
+                            This trend has also contributed to the increase in the total number of affected models.</p>
+                    </div>
+                    <div class="step" data-step="7">
+                        <p>This chart shows how the number of affected models increased or decreased over each five-year
+                            period.
+                            Software-related recalls recorded the most rapid increase.
+                        </p>
+                    </div>
+
+            </article>
+
+        </section>
+
+        <section id="outro">
+            <div class="text">
+                <p>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="scrolly2" class="scrolly">
+
+            <article>
+
+                <div class="step" data-step="1">
+                    <p>The investigation also revealed which components are most likely to cause software problems.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <p>One of the most common causes of software-related recalls is a defect in the rearview camera
+                        system.
+                        The U.S. government requires all new passenger vehicles to be equipped with rearview
+                        cameras.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <p>For example, Toyota Motor issued a major recall involving its rearview camera display system in
+                        October 2025.
+                        The recall could affect more than one million vehicles, including the RAV4 and Camry.</p>
+                </div>
+                <div class="step" data-step="4">
+                    <p>Toyota said that the parking-assist ECU supplied by Denso could sometimes cause the display to
+                        freeze.</p>
+                </div>
+                <div class="step" data-step="5">
+                    <p>This problem does not immediately prevent the vehicle from being driven.
+                        However, NHTSA requires vehicles to meet minimum safety standards, and a malfunctioning rearview
+                        camera may violate those requirements.</p>
+                </div>
+            </article>
+
+            <figure>
+                <!--<p>0</p>-->
+                <img src="images/1.jpg" alt="">
+            </figure>
+
+        </section>
+
+        <section id="outro">
+            <div class="text">
+                <p>A notable feature of software-related recalls is that a single recall campaign can affect a large
+                    number of vehicle models.
+                </p>
+            </div>
+            <div class="text">
+                <p>In fact, only 102 recall campaigns involving MY2025 vehicles were attributed to software issues.
+                    This was fewer than the number attributed to chassis or electronics problems. However, each
+                    software-related campaign can affect a very large number of vehicles.
+                    Toyota’s recall, for example, could affect more than one million vehicles.
+                    Ford Motor also issued a rearview camera recall that could affect more than one million vehicles.
+                    Hyundai Motor also conducted a major recall, covering more than 400,000 vehicles because of a defect
+                    in the automatic emergency braking system.
+                </p>
+            </div>
+            <div class="text">
+                <p>There are several ways to fix software problems. The easiest method is an over-the-air (OTA) update,
+                    which allows users to update their vehicles in much the same way that they update their smartphones.
+                    Tesla, for example, fixed a problem with its tire-pressure monitoring system through an OTA update.
+                    However, this method is not always effective. When repairs must be performed at dealerships,
+                    automakers may incur substantial costs.
+                </p>
+            </div>
+            <div class="text">
+                <p>An increasing number of vehicle functions are expected to be controlled by software in the future.
+                    Automakers will therefore need to devote greater attention to software testing and debugging.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <div class="content">
+            <p>The code and data used for this analysis are available in this GitHub repository <a
+                    href="https://github.com/kugerei213-web/SoftwareRecall">here</a>. All photo are taken by Rei Kuge.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="stickyfill.min.js"></script>
+    <script src="scrollama.min.js"></script>
+
+    <script>
+        var currentIndex = 0;
+        // using d3 for convenience
+        var main = d3.select("main");
+        var scrolly = main.select("#scrolly");
+        var figure = scrolly.select("figure");
+        var article = scrolly.select("article");
+        var step = article.selectAll(".step");
+        var imageList = [
+            "images/1.jpg",
+            "images/2.jpg",
+            "images/3.jpg",
+            "images/4.jpg",
+            "images/5.jpg",
+
+        ];
+
+        var main = d3.select("main");
+        var scrolly2 = main.select("#scrolly2");
+        var figure2 = scrolly2.select("figure");
+        var article2 = scrolly2.select("article");
+        var step2 = article2.selectAll(".step");
+        var imageList2 = [
+            "images/6.jpg",
+            "images/7.jpg",
+            "images/8.jpg",
+            "images/9.jpg",
+            "images/10.jpg"
+        ];
+
+        // initialize the scrollama
+        var scroller = scrollama();
+        var scroller2 = scrollama();
+
+
+        // generic window resize listener event
+        function handleResize() {
+            // 1. update height of step elements
+            var stepH = Math.floor(window.innerHeight * 0.75);
+            step.style("height", stepH + "px");
+
+            var figureHeight = window.innerHeight / 2;
+            var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+            figure
+                .style("height", figureHeight + "px")
+                .style("top", figureMarginTop + "px");
+
+            // 3. tell scrollama to update new element dimensions
+            scroller.resize();
+        }
+
+        function handleResize2() {
+            // 1. update height of step elements
+            var stepH = Math.floor(window.innerHeight * 0.75);
+            step2.style("height", stepH + "px");
+
+            var figureHeight = window.innerHeight / 2;
+            var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+            figure2
+                .style("height", figureHeight + "px")
+                .style("top", figureMarginTop + "px");
+
+            // 3. tell scrollama to update new element dimensions
+            scroller2.resize();
+        }
+
+        // scrollama event handlers
+        function handleStepEnter(response) {
+            console.log(response);
+            // response = {element, direction, index}
+
+            // add color to current step only
+            step.classed("is-active", function (d, i) {
+                return i === response.index;
+            });
+
+            // below is for text i changed it to image
+            //figure.select("p").text(response.index + 1);
+            figure.select("img").attr("src", imageList[response.index]);
+        }
+
+        function handleStepEnter2(response) {
+            console.log(response);
+            // response = {element, direction, index}
+
+            // add color to current step only
+            step2.classed("is-active", function (d, i) {
+                return i === response.index;
+            });
+
+            // below is for text i changed it to image
+            //figure.select("p").text(response.index + 1);
+            figure2.select("img").attr("src", imageList2[response.index]);
+        }
+
+        function setupStickyfill() {
+            d3.selectAll(".sticky").each(function () {
+                Stickyfill.add(this);
+            });
+        }
+
+        function init() {
+            setupStickyfill();
+
+            // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+            handleResize();
+
+            // 2. setup the scroller passing options
+            // 		this will also initialize trigger observations
+            // 3. bind scrollama event handlers (this can be chained like below)
+            scroller
+                .setup({
+                    step: "#scrolly article .step",
+                    offset: 0.7,
+                    debug: false
+                })
+                .onStepEnter(handleStepEnter);
+
+            // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+            handleResize2();
+
+            // 2. setup the scroller passing options
+            // 		this will also initialize trigger observations
+            // 3. bind scrollama event handlers (this can be chained like below)
+            scroller2
+                .setup({
+                    step: "#scrolly2 article .step",
+                    offset: 0.33,
+                    debug: false
+                })
+                .onStepEnter(handleStepEnter2);
+
+            // setup resize event
+            window.addEventListener("resize", handleResize);
+            window.addEventListener("resize", handleResize2);
+        }
+
+        // kick things off
+        init();
+    </script>
+
+    <script>
+
+        function handleResize() {
+            var stepH = Math.floor(window.innerHeight * 0.90);
+            step.style("height", stepH + "px");
+
+            var figureHeight = window.innerHeight / 2;
+            var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+            figure
+                .style("height", figureHeight + "px")
+                .style("top", figureMarginTop + "px");
+
+            scroller.resize();
+
+            updateDataviz(currentIndex);
+        }
+
+        function updateDataviz(index) {
+            var dataviz = d3.select("#my_dataviz");
+
+            dataviz.selectAll("*").remove();
+
+            var width = dataviz.node().clientWidth;
+            var height = dataviz.node().clientHeight;
+
+            console.log("dataviz size:", width, height, "index:", index);
+
+            var svg = dataviz
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .style("background-color", "#aliceblue");
+
+            if (index === 0) {
+                drawStep1(svg, width, height);
+            } else if (index === 1) {
+                drawStep2(svg, width, height);
+            } else if (index === 2) {
+                drawStep3(svg, width, height);
+            } else if (index === 3) {
+                drawStep4(svg, width, height);
+            } else if (index === 4) {
+                drawStep5(svg, width, height);
+            } else if (index === 5) {
+                drawStep6(svg, width, height);
+            } else if (index === 6) {
+                drawStep7(svg, width, height);
+            }
+        }
+
+        function drawStep1(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 1105 },
+                { "name": "electronics", "value": 1698 },
+                { "name": "safety equipment", "value": 546 },
+                { "name": "powertrain", "value": 368 },
+                { "name": "software", "value": 5620 },
+                { "name": "other", "value": 1280 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 9617 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            var text = d3.arc()
+                .outerRadius(radius + 50)
+                .innerRadius(radius + 50);
+
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.75)
+                .attr("stroke", "white");
+
+            pieGroup.append("text")
+                .attr("transform", function (d) { return "translate(" + text.centroid(d) + ")"; })
+                .attr("dy", "5px")
+                .attr("font-size", "15px")
+                .attr("text-anchor", "middle")
+                .style("fill", "black")
+                .text(function (d) { return d.data.name; });
+
+        }
+
+        function drawStep2(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 773 },
+                { "name": "electronics", "value": 674 },
+                { "name": "safety equipment", "value": 513 },
+                { "name": "powertrain", "value": 284 },
+                { "name": "software", "value": 32 },
+                { "name": "other", "value": 1390 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 3666 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.50)
+                .attr("stroke", "white");
+
+
+
+        }
+
+        function drawStep3(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 766 },
+                { "name": "electronics", "value": 652 },
+                { "name": "safety equipment", "value": 1074 },
+                { "name": "powertrain", "value": 421 },
+                { "name": "software", "value": 66 },
+                { "name": "other", "value": 1694 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 4673 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.75)
+                .attr("stroke", "white");
+
+
+
+        }
+
+        function drawStep4(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 687 },
+                { "name": "electronics", "value": 1098 },
+                { "name": "safety equipment", "value": 2009 },
+                { "name": "powertrain", "value": 607 },
+                { "name": "software", "value": 260 },
+                { "name": "other", "value": 1926 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 6587 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.75)
+                .attr("stroke", "white");
+
+        }
+
+        function drawStep5(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 1193 },
+                { "name": "electronics", "value": 1196 },
+                { "name": "safety equipment", "value": 1437 },
+                { "name": "powertrain", "value": 908 },
+                { "name": "software", "value": 445 },
+                { "name": "other", "value": 2212 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 7391 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.75)
+                .attr("stroke", "white");
+
+
+
+        }
+        function drawStep6(svg, width, height) {
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var dataset = [
+                { "name": "chasis", "value": 1563 },
+                { "name": "electronics", "value": 2952 },
+                { "name": "safety equipment", "value": 2308 },
+                { "name": "powertrain", "value": 2097 },
+                { "name": "software", "value": 10657 },
+                { "name": "other", "value": 3521 },
+            ]
+
+            var radius = (Math.min(width, height) / 2 - 10) * 23098 / 23098;
+
+            var color = d3.scaleOrdinal()
+                .range(["#51B7DB", "#51DBD4", "#518BDB", "#515FDB", "#DB1514", "#51DBA5"]);
+
+            var pie = d3.pie()
+                .value(function (d) { return d.value; })
+                .sort(null);
+            var pieGroup = g.selectAll(".pie")
+                .data(pie(dataset))
+                .enter()
+                .append("g")
+                .attr("class", "pie");
+
+            var arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+            var text = d3.arc()
+                .outerRadius(radius - 50)
+                .innerRadius(radius - 50);
+
+
+            pieGroup.append("path")
+                .attr("d", arc)
+                .attr("fill", function (d) { return color(d.index) })
+                .attr("opacity", 0.75)
+                .attr("stroke", "black");
+
+            pieGroup.append("text")
+                .attr("transform", function (d) { return "translate(" + text.centroid(d) + ")"; })
+                .attr("dy", "5px")
+                .attr("font", "10px")
+                .attr("text-anchor", "middle")
+                .text(function (d) { return d.data.name; });
+
+            svg.selectAll("text")
+                .style("fill", "white")
+                .attr("fill", "white");
+
+        }
+        function drawStep7(svg, width, height) {
+            console.log("width:", width);
+            console.log("height:", height);
+            var g = svg
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            d3.csv("count_model.csv").then(function (data) {
+                var margin = {
+                    top: 10,
+                    right: -40,
+                    bottom: -120,
+                    left: 70
+                };
+
+                var chartHeight = height * 0.65;
+                var chartWidth = width * 0.85;
+                var chartHeight = height * 0.65;
+
+                var innerWidth = chartWidth - margin.left - margin.right;
+                var innerHeight = chartHeight - margin.top - margin.bottom;
+
+                // List of subgroups = header of the csv files = soil condition here
+                const subgroups = data.columns.slice(1)
+
+                // List of groups = species here = value of the first column called group -> I show them on the X axis
+                const groups = data.map(d => d.group)
+
+                // Add X axis
+                const x = d3.scaleBand()
+                    .domain(groups)
+                    .range([0, innerWidth])
+                    .padding([0.2])
+
+                var chart = svg
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                chart.append("g")
+                    .attr("transform", `translate(0, ${height})`)
+                    .call(d3.axisBottom(x).tickSizeOuter(0));
+
+                // Add Y axis
+                const y = d3.scaleLinear()
+                    .domain([0, 25000])
+                    .range([innerHeight, 0]);
+                chart.append("g")
+                    .call(d3.axisLeft(y));
+
+                // color palette = one color per subgroup
+                const color = d3.scaleOrdinal()
+                    .domain(subgroups)
+                    .range(['#51DBA5', '#51B7DB', '#51DBD4', '#518BDB', '#515FDB', '#DB1514'])
+
+                //stack the data? --> stack per subgroup
+                const stackedData = d3.stack()
+                    .keys(subgroups)
+                    (data)
+
+                // ----------------
+                // Create a tooltip
+                // ----------------
+                const tooltip = d3.select("#my_dataviz")
+                    .append("div")
+                    .style("opacity", 0)
+                    .attr("class", "tooltip")
+                    .style("background-color", "white")
+                    .style("border", "solid")
+                    .style("border-width", "1px")
+                    .style("border-radius", "5px")
+                    .style("padding", "10px")
+
+                // Three function that change the tooltip when user hover / move / leave a cell
+                const mouseover = function (d) {
+                    const subgroupName = d3.select(this.parentNode).datum().key;
+                    const subgroupValue = d.data[subgroupName];
+                    tooltip
+                        .html("subgroup: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                        .style("opacity", 1)
+
+                }
+                const mousemove = function (d) {
+                    tooltip.style("transform", "translateY(-55%)")
+                        .style("left", (event.x) / 2 + "px")
+                        .style("top", (event.y) / 2 - 30 + "px")
+                }
+                const mouseleave = function (d) {
+                    tooltip
+                        .style("opacity", 0)
+                }
+                var innerHeight = height - margin.top - margin.bottom;
+
+                // Show the bars
+                chart.append("g")
+                    .selectAll("g")
+                    // Enter in the stack data = loop key per key = group per group
+                    .data(stackedData)
+                    .join("g")
+                    .attr("fill", d => color(d.key))
+                    .selectAll("rect")
+                    // enter a second time = loop subgroup per subgroup to add all rectangles
+                    .data(d => d)
+                    .join("rect")
+                    .attr("x", d => x(d.data.group))
+                    .attr("y", d => y(d[1]))
+                    .attr("height", d => y(d[0]) - y(d[1]))
+                    .attr("width", x.bandwidth())
+                    .attr("stroke", "grey")
+                    .on("mouseover", mouseover)
+                    .on("mousemove", mousemove)
+                    .on("mouseleave", mouseleave)
+
+                chart.append("g")
+                    .attr("transform", "translate(0," + y(0) + ")")
+                    .call(d3.axisBottom(x).tickSizeOuter(0));
+
+                chart.append("g")
+                    .call(d3.axisLeft(y));
+
+
+            });
+
+        }
+
+        function handleStepEnter(response) {
+            console.log("scrolly", response);
+
+            currentIndex = response.index;
+
+            step.classed("is-active", function (d, i) {
+                return i === response.index;
+            });
+
+            updateDataviz(currentIndex);
+        }
+
+        function setupStickyfill() {
+            d3.selectAll(".sticky").each(function () {
+                Stickyfill.add(this);
+            });
+        }
+
+        function init() {
+            setupStickyfill();
+
+            handleResize();
+
+            updateDataviz(0);
+
+            scroller
+                .setup({
+                    step: "#scrolly article .step",
+                    offset: 0.33,
+                    debug: true
+                })
+                .onStepEnter(handleStepEnter);
+
+            window.addEventListener("resize", handleResize);
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
